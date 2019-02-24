@@ -12,3 +12,4 @@ sudo kill -9 $(lsof -i tcp:[your_port_number] -t)
 ``` bash
 nohup python -u [your_script.py] > [your_logfile.out] 2>&1
 ```
+
