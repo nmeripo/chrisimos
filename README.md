@@ -12,5 +12,5 @@ sudo kill -9 $(lsof -i tcp:[your_port_number] -t)
 
 ### Detach and Run
 ``` bash
-nohup python -u model.py > model.out 2>&1
+nohup python -u [your_script.py] > [your_logfile.out] 2>&1
 ```
