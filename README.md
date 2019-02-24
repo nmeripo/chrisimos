@@ -2,7 +2,7 @@
 
 ### Jupyter Notebook to Python Script
 ``` bash
-jupyter nbconvert --to script model.ipynb
+jupyter nbconvert --to script [your_notebook.ipynb]
 ```
 
 ### Terminate Jupyter
