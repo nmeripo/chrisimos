@@ -1,0 +1,2 @@
+# chrisimos
+Useful commands 
