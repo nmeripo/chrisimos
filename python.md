@@ -7,4 +7,4 @@ class OrderedCounter(Counter, OrderedDict):
 OrderedCounter.__mro__
 
 (<class '__main__.OrderedCounter'>, <class 'collections.Counter'>, <class 'collections.OrderedDict'>, <class 'dict'>, <class 'object'>)
-```python
+```
