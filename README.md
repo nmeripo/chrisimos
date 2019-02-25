@@ -1,3 +1,6 @@
-# chrisimos
+# chrísimos
 Useful commands 
-[Python](./python.md)
+⋅⋅* [Bash](./python.md)
+⋅⋅* [Python](./python.md)
+⋅⋅* [PyTorch](./python.md)
+⋅⋅* [Tensorflow](./python.md)
