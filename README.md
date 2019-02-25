@@ -1,5 +1,5 @@
 # chrísimos
-Useful commands 
+* Useful commands 
 ⋅⋅* [Bash](./python.md)
 ⋅⋅* [Python](./python.md)
 ⋅⋅* [PyTorch](./python.md)
