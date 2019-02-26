@@ -13,3 +13,10 @@ optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 epoch = checkpoint['epoch']
 loss = checkpoint['loss']
 ```
+
+### Load CUDA model on CPU
+```python
+device = torch.device('cpu')
+model = TheModelClass(*args, **kwargs)
+model.load_state_dict(torch.load(PATH, map_location=device))
+```
