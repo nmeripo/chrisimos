@@ -8,3 +8,9 @@ OrderedCounter.__mro__
 
 (<class '__main__.OrderedCounter'>, <class 'collections.Counter'>, <class 'collections.OrderedDict'>, <class 'dict'>, <class 'object'>)
 ```
+#### Remove punctuation
+```python
+def strip_punct(text):
+    table = str.maketrans(dict.fromkeys(string.punctuation))
+    return text.translate(table) 
+```
