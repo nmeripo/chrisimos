@@ -14,7 +14,7 @@ epoch = checkpoint['epoch']
 loss = checkpoint['loss']
 ```
 
-### Load CUDA model on CPU
+#### Load CUDA model on CPU
 ```python
 device = torch.device('cpu')
 model = TheModelClass(*args, **kwargs)
