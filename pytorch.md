@@ -20,3 +20,18 @@ device = torch.device('cpu')
 model = TheModelClass(*args, **kwargs)
 model.load_state_dict(torch.load(PATH, map_location=device))
 ```
+
+
+### Update weights from pretrained state dict if added extra layers to the model
+```python
+model_dict = model.state_dict()
+pretrained_dict = torch.load(PATH)
+def update_weights(model_dict, pretrained_dict):
+    for name, param in pretrained_dict.items():
+        if name not in model_dict:
+             continue
+        if isinstance(param, nn.Parameter):
+            # backwards compatibility for serialized parameters
+            param = param.data
+        model_dict[name].copy_(param)
+```
