@@ -21,6 +21,12 @@ model = TheModelClass(*args, **kwargs)
 model.load_state_dict(torch.load(PATH, map_location=device))
 ```
 
+#### Print trainable arameters
+```python
+for name, param in model.named_parameters():
+    if param.requires_grad:
+        print(name, param.data.shape)
+```
 
 #### Update weights from pretrained state dict if added extra layers to the model
 ```python
