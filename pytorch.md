@@ -22,7 +22,7 @@ model.load_state_dict(torch.load(PATH, map_location=device))
 ```
 
 
-### Update weights from pretrained state dict if added extra layers to the model
+#### Update weights from pretrained state dict if added extra layers to the model
 ```python
 model_dict = model.state_dict()
 pretrained_dict = torch.load(PATH)
