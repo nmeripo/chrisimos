@@ -32,6 +32,7 @@ for name, param in model.named_parameters():
 ```python
 model_dict = model.state_dict()
 pretrained_dict = torch.load(PATH)
+
 def update_weights(model_dict, pretrained_dict):
     for name, param in pretrained_dict.items():
         if name not in model_dict:
