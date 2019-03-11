@@ -1,6 +1,6 @@
 # chrísimos
 Useful code & commands 
-* [Bash](./python.md)
+* [Bash](./bash.md)
 * [Python](./python.md)
-* [PyTorch](./python.md)
-* [Tensorflow](./python.md)
+* [PyTorch](./pytorch.md)
+* [Tensorflow](./tensorflow.md)
