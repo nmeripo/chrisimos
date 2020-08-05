@@ -14,3 +14,9 @@ def strip_punct(text):
     table = str.maketrans(dict.fromkeys(string.punctuation))
     return text.translate(table) 
 ```
+
+#### Flatten a 2D list
+```python
+def flatten_list(l):
+    return [item for subl in l for item in subl]
+```
